@@ -1,0 +1,245 @@
+:root {
+    --ColorAmarillo: #EAC926;
+    --ColorAzul: #03264C;
+    --ColorCeleste: #1259c3;
+    --ColorGrisOscuro: #666;
+    --ColorGrisClaro: #ebebeb;
+    --ColorVerde: #39b54a;
+    --TamañoCuerposDeTexto: 12px;
+    --TamañoTitulares: 24px;
+    --TamañoPrecios: 18px;
+    --TamañoDescuentos: 16px;
+    --TamañoDescripciones: 16px;
+    --FuenteDeTexto: roboto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--FuenteDeTexto);
+    background: var(--ColorGrisClaro);
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--ColorAmarillo);
+    padding: 20px;
+    width: 100vw;
+    margin: auto;
+}
+
+.contenedor--header {
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    margin:auto
+}
+
+.logo {
+    width: 50%;
+}
+
+.buscador--input {
+    width: 50%;
+    height: 22%;
+    font-size: 1em;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.buscador--button {
+    padding: 2px;
+    color: var(--ColorGrisOscuro);
+    border: 1px solid black;
+}
+
+.destacado {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+.listas a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 0;
+    font-size: 15px;
+}
+
+.burger-menu {
+    background-color: var(--ColorAzul);
+    color: white;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+
+/* BANNER */
+
+.banner {
+    width: 100vw;
+    margin: auto;
+}
+
+
+/* MAIN */
+
+.contenedor--main {
+    width: 100vw;
+    padding: 15px;
+    margin: auto;
+    margin-top: -5px;
+    background-color: var(--ColorGrisClaro);
+}
+
+
+.titulares {
+    font-size: var(--TamañoTitulares);
+    color: var(--ColorGrisOscuro);
+    padding: 10px 15px 15px 0px;
+    font-weight: bold;
+}
+
+.productos {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.imagenes--productos {
+    width: 100%;
+    margin: auto;
+}
+
+.productos--descripcion {
+    padding: 15px;
+    border-top: solid 1px var(--ColorGrisClaro);
+}
+
+.precios {
+    font-size: var(--TamañoPrecios);
+}
+
+.descuentos {
+    font-size: var(--TamañoDescuentos);
+    color: var(--ColorVerde);
+}
+
+.descripciones {
+    font-size: var(--TamañoDescripciones);
+    color: var(--ColorGrisOscuro);
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.fa-truck {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50%;
+    color: var(--ColorVerde);
+    }
+
+
+/* FOOTER */
+
+.contenedor--footer {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+
+.secciones {
+    color: var(--ColorGrisOscuro);
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    margin: 0px 60px 0px 60px;
+}
+
+.cuerpos-de-texto {
+    font-size: var(--TamañoCuerposDeTexto);
+}
+
+.copyright {
+    font-size: var(--TamañoCuerposDeTexto);
+    color: var(--ColorGrisOscuro);
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+
+.fa-credit-card {
+    color: var(--ColorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa-gift {
+    color: var(--ColorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa-user-shield {
+    color: var(--ColorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .descripciones {
+        display: none;
+    }
+
+    .listas {
+        display: none;
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+    .productos {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .contenedor--footer {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+}

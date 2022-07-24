@@ -1,0 +1,15 @@
+{
+  "name": "mercado-liebre-v2.0",
+  "version": "1.0.0",
+  "description": "TP Mercado Liebre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Federico Somma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
