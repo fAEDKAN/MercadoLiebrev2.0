@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merk2 Liebre - Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <section class="contenedor--header">
+            <div class="logo">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo"></a>
+            </div>
+            <div class= "header__section--buscador">
+                <form action="#">
+                    <input type="text" placeholder="Buscador..." class="buscador--input">
+                    <button type="submit" class="buscador--button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div>
+                <h2 class="header__section--destacado">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito.
+                </h2>
+            </div>
+        </section>
+        <section class="header__section--listas">
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:3030/ofertas">Ofertas</a></li>
+                    <li><a href="http://localhost:3030/tiendasoficiales">Tiendas Oficiales</a></li>
+                    <li><a href="http://localhost:3030/vender">Vender</a></li>
+                    <li><a href="http://localhost:3030/ayuda">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="http://localhost:3030/miscompras">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="main__section--loginForm">
+            <form action="#">
+                <input type="text" class="dataInput" placeholder="Nombre de usuario" required>
+                <input type="pass" class="dataInput" placeholder="Contraseña" minlength="8" maxlength="25" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="contenedor--footer">
+            <article class="footer__section__article--secciones">
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p class="footer__section__article__secciones--texto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article class="footer__section__article--secciones">
+                <i class="fas fa-gift"></i>
+                <h4>Envío gratis desde los $ 2.500</h4>
+                <p class="footer__section__article__secciones--texto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </article>
+            <article class="footer__section__article--secciones">
+                <i class="fas fa-user-shield"></i>
+                <h4>Seguridad de principio a fin</h4>
+                <p class="footer__section__article__secciones--texto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </article>
+            <div class="copyright">
+                <p class="footer__section__article__secciones--texto">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
