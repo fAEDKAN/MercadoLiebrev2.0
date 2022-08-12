@@ -121,6 +121,10 @@ main {
     background-color: white;
 }
 
+.main__section__article--productos:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
 .productos--imagenes {
     width: 100%;
 }
@@ -149,6 +153,14 @@ main {
     display: none;
 }
 
+.main__section__article--productos:hover .main__section__article__div--descripciones {
+    font-size: var(--TamañoDescripciones);
+    color: var(--ColorGrisOscuro);
+    padding-top: 15px;
+    width: 100%;
+    display: block;
+}
+
 .fa-truck {
     display: block;
     font-size: 16px;
@@ -164,6 +176,10 @@ main {
     top: -15px;
 }
 
+.fa-truck:hover {
+    transform: rotateZ(270deg);
+    transition: 1s;
+}
 
 /* FOOTER */
 
@@ -187,6 +203,10 @@ main {
     text-align: center;
 }
 
+.footer__section__article--secciones i:hover {
+    color: var(--ColorAzulIntermedio);
+}
+
 .footer__section__article__secciones--texto {
     font-size: var(--TamañoCuerposDeTexto);
 }
@@ -194,7 +214,7 @@ main {
 .copyright {
     font-size: var(--TamañoCuerposDeTexto);
     color: var(--ColorGrisOscuro);
-    padding: 40px 0px 20px 0px;
+    padding: 40px 0px 20px;
     text-align: center;
 }
 
@@ -232,7 +252,7 @@ main {
     .header__section--listas nav {
         display: flex;
         justify-content: space-between;
-        padding: 20px 0px 8px 0px;
+        padding: 20px 0px 8px;
         width: 100%;
     }
     
@@ -268,20 +288,11 @@ main {
     }
 
     .main__section__article--productos {
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         width: 45%;
     }
 
-    .main__section__article__div--descripciones {
-        font-size: var(--TamañoDescripciones);
-        color: var(--ColorGrisOscuro);
-        padding-top: 15px;
-        width: 100%;
-        display: block;
-    }
-
     .contenedor--footer {
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     }
 
     .footer__section__article--secciones {
@@ -313,4 +324,19 @@ main {
         width: 20%;
     }
 
+    .contenedor--footer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+        padding: 0;
+        margin: 15px;
+    }
+
+    .footer__section__article--secciones {
+        width: 300px;
+        height: 150px;
+    }
 }
