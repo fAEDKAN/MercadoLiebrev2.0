@@ -69,3 +69,8 @@
     border-radius: 4px;
     border: none;
 }
+
+.main__section__form--btns button:hover {
+    transition: 0.5s;
+    background: #0022AA;
+}

@@ -226,10 +226,6 @@ main {
 
 @media (min-width: 768px) {
 
-    header {
-        padding: 10px;
-    }
-
     .contenedor--header {
         justify-content: space-between;
         padding-bottom: 1%;
